@@ -5,7 +5,7 @@ const {User} = require("../model/user.model");
 
 const register = async (req,res)=>{
     try {
-        const {name,email,role,password} = req.body;
+        const {name,email,password} = req.body;
 
         // Search is user already present or not
         const isUserPresent = await User.findOne({email});
@@ -14,7 +14,7 @@ const register = async (req,res)=>{
         }
 
         const hashPassword = await bcrypt.hash(password,4);
-        const newUser = new User({name,email,role,password:hashPassword})
+        const newUser = new User({name,email,password:hashPassword})
         await newUser.save();
         res.status(201).json({message:"Registration successful",isOk:true})
     } catch (error) {
