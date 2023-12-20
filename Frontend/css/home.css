@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: aqua;
+}
+
+nav h2{
+    cursor: pointer;
+}
+
+body{
+    background: rgb(245, 239, 230);
+}
+
+#container{
+    display: block;
+    width: 30rem;
+    height: 15rem;
+    background-color:cyan;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 9px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg , rgb(132, 231, 238), rgb(143, 231, 162));
+}
+#container > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+label{
+    
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    
+}
+#url{
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-size: large;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+#btn{
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 5px ;
+    border-radius: 5px;
+    border-top: none;
+    border-bottom: none;
+    background-color: bisque;
+    font-size: medium;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+}
