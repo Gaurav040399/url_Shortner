@@ -5,7 +5,7 @@ const signupBtn = document.getElementById('signup');
 const signupform = document.getElementById("signupbtn");
 const loginform = document.getElementById("loginbtn");
 
-let url = "http://localhost:9090"
+let url = "https://urlshortner-0roe.onrender.com"
 
 signupform.addEventListener("click",()=>{
 

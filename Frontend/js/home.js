@@ -1,6 +1,6 @@
 const shortenbtn = document.getElementById("btn");
 
-let url = "http://localhost:9090";
+let url = "https://urlshortner-0roe.onrender.com";
 
 shortenbtn.addEventListener("click", () => {
     let urlinp = document.getElementById("url").value;
